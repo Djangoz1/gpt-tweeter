@@ -1,3 +1,4 @@
+import cron from "node-cron";
 import { tweetWithImage } from "./utils/tweeter";
 import { generateCodeImage } from "./utils/puppeteer";
 import { openAiRequest } from "./utils/openai";
@@ -29,5 +30,5 @@ async function main() {
 }
 
 console.log("🚀 Cron process");
-main();
-// cron.schedule("0 * * * *", main);
+// main();
+cron.schedule("0 * * * *", main);
