@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node-cron": "^3.0.11",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
@@ -18,9 +19,12 @@
     "dotenv": "^16.4.5",
     "form-data": "^4.0.0",
     "fs": "^0.0.1-security",
+    "node-cron": "^3.0.3",
     "node-fetch": "^3.3.2",
     "openai": "^4.29.2",
     "puppeteer": "^22.5.0",
+    "request": "^2.88.2",
+    "twit": "^2.2.11",
     "twitter-api-v2": "^1.16.1",
     "typescript": "^5.4.2"
   }
