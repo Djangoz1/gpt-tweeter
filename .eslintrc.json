@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": false, // Change this to false as we are not in a browser environment
+    "es2021": true,
+    "node": true // Add this line to specify that we are in a Node.js environment
+  },
+  "extends": [
+    "eslint:recommended"
+    // Remove "plugin:react/recommended" as we are not using React in a Node.js script
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false // Change this to false as we are not using JSX in a Node.js script
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  // Remove "react" from plugins as we are not using React in a Node.js script
+  "plugins": [],
+  "rules": {}
+}
