@@ -31,4 +31,7 @@ async function main() {
 
 console.log("🚀 Cron process");
 
-cron.schedule("0 * * * *", main);
+cron.schedule("0 */2 * * *", async () => {
+  console.log("Running cron job");
+  await main();
+});
