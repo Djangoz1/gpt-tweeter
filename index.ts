@@ -30,5 +30,5 @@ async function main() {
 }
 
 console.log("🚀 Cron process");
-// main();
+
 cron.schedule("0 * * * *", main);
